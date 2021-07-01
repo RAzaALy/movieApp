@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="aos/dist/aos.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Movies App</title>
+  </head>
+  <body>
+    <div class="bg">
+      <img alt="" class="backImg" />
+      <div class="logo">
+        <img class = 'logo'src="Img/logo.svg" alt="" />
+      </div>
+    </div>
+
+    <header>
+      <form id="form">
+        <div class="control">
+          <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="Search Best Movies ..."
+            autocomplete="off"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+      </form>
+    </header>
+
+    <main id="main"></main>
+
+    <div class="pagination">
+      <i role="button" id="prev" class="fas fa-arrow-left fa-2x"></i>
+      <a class="active">1</a>
+      <a>2</a>
+      <a>3</a>
+      <a>4</a>
+      <a>5</a>
+      <a class="block">6</a>
+      <a class="block">7</a>
+      <a class="block">8</a>
+      <a class="block">9</a>
+      <i role="button" id="next" class="fas fa-arrow-right fa-2x"></i>
+    </div>
+    <button id="myBtn" title="go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="footer">
+      <p>
+        Copyright <i class="fas fa-copyright"></i> 2021 www.GetBestMovies.com
+        All right reserved!
+      </p>
+    </footer>
+    <script src="aos/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
