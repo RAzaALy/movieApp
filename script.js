@@ -7,7 +7,7 @@ const totalPages = 500;
 let start = true;
 let page = randomPage();
 
-let API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=1995706620a80431488272f6e5dd4fab&page=${page}`;
+let API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=yourapikey&page=${page}`;
 
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
 
@@ -164,7 +164,7 @@ rightBtn.addEventListener("click", (e) => {
   if (page > totalPages) {
     page = 1;
   }
-  API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=1995706620a80431488272f6e5dd4fab&page=${page}`;
+  API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=yourapikey&page=${page}`;
   getMovies(API_URL);
 });
 
@@ -173,7 +173,7 @@ leftBtn.addEventListener("click", (e) => {
   if (page <= 0) {
     page = 500;
   }
-  const API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=1995706620a80431488272f6e5dd4fab&page=${page}`;
+  const API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=yourapikey&page=${page}`;
   getMovies(API_URL);
 });
 
@@ -191,7 +191,7 @@ anchor.forEach((a) => {
     // console.log(a.innerText);
     pageNo = +a.innerText;
     console.log(pageNo);
-    const API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=2502288e66a71d6e071668a85fbebfab&page=${pageNo}`;
+    const API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=yourapikey&page=${pageNo}`;
     getMovies(API_URL);
   });
 });
